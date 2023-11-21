@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:background="@color/ui_color"
+    tools:context=".SignupResult">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_weight="1"
+        android:id="@+id/l_1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbar"
+            android:layout_alignParentTop="true"
+
+            >
+
+            <TextView
+                android:id="@+id/topheading_success"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/sfpro_display"
+                android:text="Success"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/thanks_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/sfpro_display"
+            android:text="You have created your account"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thanks for creating account, now here check your intered details and continue to home page"
+            android:layout_below="@+id/thanks_text"
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:fontFamily="@font/sfprodisplay_litet"
+            android:textColor="@color/white"
+            android:id="@+id/thanks_subtitle"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/thanks_subtitle"
+            android:layout_marginTop="10dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/success"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_white"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:id="@+id/inputed_details">
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="10dp"
+                android:background="@drawable/shape_ui_button"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/top_div"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/top_div"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerHorizontal="true"
+                android:text="Your entered details"
+                android:fontFamily="@font/sfpro_display"
+                android:textColor="@color/ui_color"
+                android:id="@+id/details_text_top"
+                android:textSize="18dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@id/details_text_top"
+                android:id="@+id/details_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:id="@+id/name_layout"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/baseline_person"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name: "
+                        android:fontFamily="@font/sfpro_display"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/nameTitle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Shahriar Sakib"
+                        android:fontFamily="@font/sfpro_display"
+                        android:id="@+id/name"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/name_layout"
+                    android:id="@+id/email_layout"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/baseline_email"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email: "
+                        android:fontFamily="@font/sfpro_display"
+                        android:layout_marginLeft="5dp"
+                        android:id="@+id/emailTtitle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="youremail@gmail.com"
+                        android:fontFamily="@font/sfpro_display"
+                        android:id="@+id/email"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_layout"
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/numberlayout"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/baseline_call"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Number: "
+                        android:layout_marginLeft="5dp"
+                        android:fontFamily="@font/sfpro_display"
+                        android:id="@+id/numberTtitle"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01234567895"
+                        android:fontFamily="@font/sfpro_display"
+                        android:id="@+id/number"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@+id/details_layout"
+                android:background="@drawable/div"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/details_layout"
+                android:layout_marginTop="5dp"
+                android:id="@+id/checkbox_layout"
+                >
+
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/checkbox"
+                    android:text="Youre agree with our Privacy Policy "
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/checkbox_layout"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_ui_button"
+                android:padding="10dp"
+                android:text="Continue"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sfpro_display"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/continue_text"/>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>
