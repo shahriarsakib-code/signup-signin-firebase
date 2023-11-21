@@ -1,6 +1,6 @@
 # Simple USA Insurange Trips App
 
-  <img src="screenshots/screenshots.jpeg" alt="Screenshot 1"/>
+  <img src="screenshots/screenshots.png" alt="Screenshot 1"/>
   
 
 
